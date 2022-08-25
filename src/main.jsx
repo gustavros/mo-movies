@@ -1,6 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { App } from "./App";
-import "/src/styles/app.module.sass";
+import { DataContextProvider } from "./context/DataContext";
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+import ReactDOM from "react-dom/client";
+import "/src/styles/app.module.sass";
+import { App } from "./App";
+import React from "react";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <DataContextProvider value={{}}>
+    <App />
+  </DataContextProvider>
+);
