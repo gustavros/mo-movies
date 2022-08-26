@@ -1,10 +1,12 @@
 import { Navbar } from "../Navbar/Navbar";
+import { Link } from "react-router-dom";
+
 import styles from "./header.module.sass";
 
 export const Header = () => {
   return (
     <header>
-      <h1>Mo' Movies</h1>
+      <Link to="/">Mo' Movies</Link>
 
       <Navbar />
     </header>

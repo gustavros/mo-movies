@@ -1,0 +1,25 @@
+@import src/styles/global.sass
+
+nav
+
+  a
+    &:hover
+      animation: svg-hover 1s ease alternate
+  ul
+    display: flex
+    gap: 2rem
+
+    svg
+      color: $headline
+
+@keyframes svg-hover
+  0%
+    stroke-width: 0
+    stroke-dasharray: 1 100
+
+  25%
+    stroke-width: 2
+
+  100%
+    stroke-width: 1
+    stroke-dasharray: 100 1
