@@ -10,8 +10,6 @@ export const Home = () => {
   const { topRated } = useContext(DataContext);
   const URL_IMAGE = "https://image.tmdb.org/t/p/w500";
 
-  console.log(topRated);
-
   useTitle("Página inicial | Mo' Movies 🎥");
 
   return (

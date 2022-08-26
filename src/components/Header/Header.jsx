@@ -5,7 +5,7 @@ import styles from "./header.module.sass";
 
 export const Header = () => {
   return (
-    <header>
+    <header className={styles}>
       <Link to="/">Mo' Movies</Link>
 
       <Navbar />
