@@ -4,8 +4,8 @@ import { Header } from "../../components/Header/Header";
 import { DataContext } from "../../context/DataContext";
 import { Star } from "phosphor-react";
 import { Link } from "react-router-dom";
-
 import styles from "./home.module.sass";
+
 
 export const Home = () => {
   useTitle("Página inicial | Mo' Movies 🎥");
