@@ -11,13 +11,19 @@
   .container__movie
     display: flex
     flex-direction: column
+    justify-content: space-between
     gap: 2rem
-
-    padding: 0.8rem
 
     border-radius: 10px
     background: $background
     box-shadow: 27px 27px 54px $background,-27px -27px 54px $background
+
+    a
+      text-decoration: none
+
+      display: flex
+      flex-direction: column
+      gap: 0.4rem
 
     h1
       font-size: 2rem
@@ -55,8 +61,6 @@
       &:hover
         border: 1px solid $headline
         cursor: pointer
-
-        transform: scale(1.01)
 
 @media screen and ( max-width: 1115px  )
 
