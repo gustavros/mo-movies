@@ -17,7 +17,6 @@ export const Home = () => {
     <>
       <Header />
       <h1>FILMES EM ALTA</h1>
-
       <div className={styles.container__movies}>
         {topRated &&
           topRated.map((data) => {

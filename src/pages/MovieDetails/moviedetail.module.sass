@@ -1,0 +1,50 @@
+@import "/src/styles/global.sass"
+
+.container__movie
+
+  display: flex
+  align-items: center
+  gap: 8rem
+
+  margin-block: 2rem
+
+  img
+    width: 28%
+
+  .container__movie__content
+
+    h2
+      margin-top: 1.2rem
+      font-size: 4rem
+
+    p
+      width: 100%
+      max-width: 500px
+
+      text-align: left
+      font-size: 1.8rem
+
+      margin-bottom: 2rem
+
+    span
+      margin-right: .4rem
+      padding: 0.6rem
+
+      border-radius: 5px
+      background: $background-light
+
+@media screen and ( max-width:1115px  )
+
+  .container__movie
+
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 6rem
+
+    margin-block: 2rem
+
+    text-align: center
+
+    img
+      width: 50%
