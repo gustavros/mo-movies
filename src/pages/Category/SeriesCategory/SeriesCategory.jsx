@@ -1,7 +1,9 @@
-import React from "react";
 import { Header } from "../../../components/Header/Header";
+import { useTitle } from "react-use";
 
 export const SeriesCategory = () => {
+  useTitle("Categoria de séries | Mo' Movies 🎥");
+
   return (
     <>
       <Header />
