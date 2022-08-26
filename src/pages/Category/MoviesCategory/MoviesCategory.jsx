@@ -3,7 +3,7 @@ import { Header } from "../../../components/Header/Header";
 import { useTitle } from "react-use";
 
 export const MoviesCategory = () => {
-  useTitle("Categoria de filmes | Mo' Movies 🎥");
+  useTitle("Categoria de filmes | Mo' Movies");
 
   return (
     <>
