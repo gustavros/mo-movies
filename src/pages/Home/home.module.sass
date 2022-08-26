@@ -1,0 +1,87 @@
+@import 'src/styles/global.sass'
+
+.container__movies
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr 1fr 1fr
+  gap: 2rem
+
+  padding-block: 2rem
+
+  .container__movie
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    gap: 2rem
+
+    border-radius: 10px
+    background: $background
+    box-shadow: 27px 27px 54px $background,-27px -27px 54px $background
+
+    a
+      text-decoration: none
+
+      display: flex
+      flex-direction: column
+      gap: 0.4rem
+
+    h1
+      font-size: 2rem
+      line-height: 2rem
+
+      color: $headline-secondary
+
+      &::before
+
+        content: ""
+
+        width: 1.8rem
+        height: 0.8rem
+
+        display: inline-block
+        margin-right: 0.4rem
+
+        background-color: $headline-dark
+
+    .container__infos
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+      p
+        text-transform: uppercase
+
+    img
+      width: 100%
+      border-radius: 6px
+      border: 1px solid $white
+
+      transition: all 0.2s ease-in-out
+
+      &:hover
+        border: 1px solid $headline
+        cursor: pointer
+
+@media screen and ( max-width: 1115px  )
+
+  .container__movies
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr
+    gap: 2rem
+
+@media screen and ( max-width: 1024px)
+
+  .container__movies
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    gap: 2rem
+
+@media screen and ( max-width: 425px)
+
+  .container__movies
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr
+    gap: 2rem
