@@ -7,10 +7,10 @@ import { Star } from "phosphor-react";
 import styles from "./home.module.sass";
 
 export const Home = () => {
+  useTitle("Página inicial | Mo' Movies 🎥");
+  
   const { topRated } = useContext(DataContext);
   const URL_IMAGE = "https://image.tmdb.org/t/p/w500";
-
-  useTitle("Página inicial | Mo' Movies 🎥");
 
   return (
     <>
