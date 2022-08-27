@@ -16,13 +16,16 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <h1>FILMES EM ALTA</h1>
+      <div className={styles.container__movies__content}>
+        <h1>MAIS AVALIADOS</h1>
+        <span>Os filmes mais votados.</span>
+      </div>
       <div className={styles.container__movies}>
         {topRated &&
           topRated.map((data) => {
             return (
               <div key={data.id} className={styles.container__movie}>
-                <Link to={`movie/${data.id}`}>
+                <Link to={`details/movie/${data.id}`}>
                   <h1>{data.title}</h1>
                   <img src={`${URL_IMAGE}${data.backdrop_path}`} alt="" />
                 </Link>

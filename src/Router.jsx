@@ -13,7 +13,7 @@ export function Router() {
       <Route path="/category-movies" element={<MoviesCategory />} />
       <Route path="/category-series" element={<SeriesCategory />} />
 
-      <Route path="/movie/:id" element={<MovieDetail />} />
+      <Route path="details/movie/:id" element={<MovieDetail />} />
     </Routes>
   );
 }

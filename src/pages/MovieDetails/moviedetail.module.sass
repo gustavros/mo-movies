@@ -8,10 +8,28 @@
 
   margin-block: 2rem
 
+  width: $width-normal
+  max-width: 100%
+
+  margin: 0 auto
+
   img
     width: 28%
 
   .container__movie__content
+    .container__movie__genres
+      display: flex
+      align-items: center
+      gap: 0.4rem
+
+    ul
+      list-style: none
+
+      li
+        padding: 0.6rem
+
+        border-radius: 5px
+        background: $background-light
 
     h2
       margin-top: 1.2rem
@@ -26,34 +44,52 @@
 
       margin-bottom: 2rem
 
-    span
-      margin-right: .4rem
-      padding: 0.6rem
-
-      border-radius: 5px
-      background: $background-light
-
-.container__movie__similar
-
-  display: grid
-  grid-template-columns: 1fr 1fr 1fr
-  grid-template-rows: 1fr 1fr 1fr
-  gap: 2rem
-
-  h2
-    font-size: 2rem
-
-  img
-    width: 100%
-    max-width: 100%
-
-    margin: 0 auto
-
-  div
-
+  .container__movie__infos
     display: flex
-    flex-direction: column
-    align-items: center
+    justify-content: space-between
+    gap: 0.6rem
+
+    div:nth-child(1)
+
+      display: flex
+      align-items: center
+      gap: 0.4rem
+
+      h2
+        font-size: 1.8rem
+        font-weight: 200
+        margin-top: 0
+
+      span
+        padding: 0.6rem
+
+        border-radius: 5px
+        background: $background-light
+
+    div
+
+      display: flex
+      align-items: center
+
+      gap: 0.4rem
+
+      h2
+        font-size: 1.8rem
+        font-weight: 200
+        margin-top: 0
+
+      span
+        padding: 0.6rem
+
+        border-radius: 5px
+        background: $background-light
+
+.container__movie__trailer
+
+  margin-top: 4rem
+
+  iframe
+    width: 100%
 
 @media screen and ( max-width:940px  )
 
@@ -71,9 +107,50 @@
     img
       width: 50%
 
-  .container__movie__similar
+    .container__movie__content
+      .container__movie__genres
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 0.4rem
 
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-template-rows: 1fr 1fr
-    gap: 2rem
+@media screen and ( max-width:495px  )
+  .container__movie__infos
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    div:nth-child(1)
+
+      display: flex
+      align-items: center
+      gap: 0.4rem
+
+      h2
+        font-size: 1.8rem
+        font-weight: 200
+        margin-top: 0
+
+      span
+        padding: 0.6rem
+
+        border-radius: 5px
+        background: $background-light
+
+    div
+
+      display: flex
+      justify-content: center
+
+      gap: 0.4rem
+
+      h2
+        font-size: 1.8rem
+        font-weight: 200
+        margin-top: 0
+
+      span
+        padding: 0.6rem
+
+        border-radius: 5px
+        background: $background-light
