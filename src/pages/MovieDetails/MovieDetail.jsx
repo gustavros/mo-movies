@@ -81,8 +81,8 @@ export const MovieDetail = () => {
           ? trailer.map((video) => {
               return (
                 <>
-                  <h1>Trailer</h1>
-                  <ul>
+                  <ul key={video.id}>
+                    <h2>{video.name}</h2>
                     <iframe
                       width="853"
                       height="480"
@@ -90,7 +90,7 @@ export const MovieDetail = () => {
                       title=""
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
+                      allowFullScreen
                     >
                       a
                     </iframe>
@@ -98,7 +98,7 @@ export const MovieDetail = () => {
                 </>
               );
             })
-          : ""}
+          : "Trailer"}
       </div>
       <Footer />
     </>
