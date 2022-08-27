@@ -33,6 +33,28 @@
       border-radius: 5px
       background: $background-light
 
+.container__movie__similar
+
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr 1fr
+  gap: 2rem
+
+  h2
+    font-size: 2rem
+
+  img
+    width: 100%
+    max-width: 100%
+
+    margin: 0 auto
+
+  div
+
+    display: flex
+    flex-direction: column
+    align-items: center
+
 @media screen and ( max-width:940px  )
 
   .container__movie
@@ -48,3 +70,10 @@
 
     img
       width: 50%
+
+  .container__movie__similar
+
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    gap: 2rem

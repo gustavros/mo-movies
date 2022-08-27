@@ -66,12 +66,12 @@ export const MovieDetail = () => {
       </div>
 
       <h1>Similares</h1>
-      <div className={styles.contaioner__movie__similar}>
+      <div className={styles.container__movie__similar}>
         {similarMovies &&
           similarMovies.map((movie) => {
             return (
               <div key={movie.id}>
-                <h1>{movie.title}</h1>
+                <h2>{movie.title}</h2>
                 <img src={`${URL_IMAGE}${movie.backdrop_path}`} alt="" />
               </div>
             );
