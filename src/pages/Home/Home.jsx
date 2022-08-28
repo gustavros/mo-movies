@@ -20,6 +20,7 @@ export const Home = () => {
         <div className={styles.container__movies__content}>
           <h1>MAIS POPULARES</h1>
           <span>Os filmes mais populares.</span>
+          <Link to={""}>Ver mais</Link>
         </div>
         <div className={styles.container__movies}>
           {popularMovies &&
@@ -54,7 +55,7 @@ export const Home = () => {
             })}
         </div>
       </div>
-      
+
       <div>
         <div className={styles.container__movies__content}>
           <h1>MAIS AVALIADOS</h1>

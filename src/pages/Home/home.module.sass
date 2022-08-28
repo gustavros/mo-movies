@@ -3,7 +3,8 @@
 .container__movies__content
 
   font-size: 2rem
-  text-align: center
+  display: flex
+  flex-direction: column
 
   h1
     &::after
@@ -15,6 +16,25 @@
       height: 2px
 
       margin-left: 1rem
+
+  a
+    display: block
+    width: fit-content
+
+    font-size: 1.6rem
+    text-decoration: none
+    color: $headline
+
+    border-radius: 6px
+    background-color: #13151d
+
+    padding: 0.6rem
+    margin-top: auto
+
+    transition: all 0.2s ease-in-out
+
+    &:hover
+      background-color: #171922
 
 .container__movies
   display: grid
@@ -34,7 +54,6 @@
     background: $background
     box-shadow: 27px 27px 54px $background
 
-    padding: 1rem
 
     a
       text-decoration: none
