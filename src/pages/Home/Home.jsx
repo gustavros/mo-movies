@@ -16,13 +16,13 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <div>
+      <div className={styles.container__popular}>
         <div className={styles.container__movies__content}>
           <div>
             <h1>MAIS POPULARES</h1>
             <span>Os filmes mais populares.</span>
           </div>
-          <Link to={""}>Ver mais</Link>
+          <Link to={"/movies/popular"}>Ver mais</Link>
         </div>
         <div className={styles.container__movies}>
           {popularMovies &&
@@ -61,13 +61,13 @@ export const Home = () => {
         </div>
       </div>
 
-      <div>
+      <div className={styles.container__rated}>
         <div className={styles.container__movies__content__rated}>
           <div>
             <h1>MAIS AVALIADOS</h1>
             <span>Os filmes mais votados.</span>
           </div>
-          <Link to={""}>Ver mais</Link>
+          <Link to={"/movies/popular"}>Ver mais</Link>
         </div>
         <div className={styles.container__movies__rated}>
           {topRated &&
