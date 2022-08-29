@@ -13,7 +13,7 @@ export const Navbar = () => {
           <Article size={32} />
         </Link>
         <Link
-          to="/category-movies"
+          to="/category/movies"
           data-tip="Categoria de filmes"
           data-text-color="#0fc"
         >
@@ -23,7 +23,7 @@ export const Navbar = () => {
         </Link>
         <ReactTooltip />
         <Link
-          to="/category-series"
+          to="/category/series"
           data-tip="Categoria de séries"
           data-text-color="#0fc"
         >

@@ -12,8 +12,8 @@ export function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/category-movies" element={<MoviesCategory />} />
-      <Route path="/category-series" element={<SeriesCategory />} />
+      <Route path="/category/movies" element={<MoviesCategory />} />
+      <Route path="/category/series" element={<SeriesCategory />} />
 
       <Route path="movie/details/:id" element={<MovieDetail />} />
       
