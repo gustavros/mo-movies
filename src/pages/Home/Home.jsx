@@ -18,8 +18,10 @@ export const Home = () => {
       <Header />
       <div>
         <div className={styles.container__movies__content}>
-          <h1>MAIS POPULARES</h1>
-          <span>Os filmes mais populares.</span>
+          <div>
+            <h1>MAIS POPULARES</h1>
+            <span>Os filmes mais populares.</span>
+          </div>
           <Link to={""}>Ver mais</Link>
         </div>
         <div className={styles.container__movies}>
@@ -29,7 +31,10 @@ export const Home = () => {
                 <div key={data.id} className={styles.container__movie}>
                   <Link to={`details/movie/${data.id}`}>
                     <h1>{data.title}</h1>
-                    <img src={`${URL_IMAGE}${data.backdrop_path}`} alt="" />
+                    <img
+                      src={`${URL_IMAGE}${data.backdrop_path}`}
+                      alt={data.title}
+                    />
                   </Link>
                   <div className={styles.container__infos}>
                     <p>
@@ -57,18 +62,24 @@ export const Home = () => {
       </div>
 
       <div>
-        <div className={styles.container__movies__content}>
-          <h1>MAIS AVALIADOS</h1>
-          <span>Os filmes mais votados.</span>
+        <div className={styles.container__movies__content__rated}>
+          <div>
+            <h1>MAIS AVALIADOS</h1>
+            <span>Os filmes mais votados.</span>
+          </div>
+          <Link to={""}>Ver mais</Link>
         </div>
-        <div className={styles.container__movies}>
+        <div className={styles.container__movies__rated}>
           {topRated &&
             topRated.map((data) => {
               return (
                 <div key={data.id} className={styles.container__movie}>
                   <Link to={`details/movie/${data.id}`}>
                     <h1>{data.title}</h1>
-                    <img src={`${URL_IMAGE}${data.backdrop_path}`} alt="" />
+                    <img
+                      src={`${URL_IMAGE}${data.backdrop_path}`}
+                      alt={data.title}
+                    />
                   </Link>
                   <div className={styles.container__infos}>
                     <p>
