@@ -29,7 +29,7 @@ export const Home = () => {
             popularMovies.map((data) => {
               return (
                 <div key={data.id} className={styles.container__movie}>
-                  <Link to={`details/movie/${data.id}`}>
+                  <Link to={`movie/details/${data.id}`}>
                     <h1>{data.title}</h1>
                     <img
                       src={`${URL_IMAGE}${data.backdrop_path}`}
@@ -74,7 +74,7 @@ export const Home = () => {
             topRated.map((data) => {
               return (
                 <div key={data.id} className={styles.container__movie}>
-                  <Link to={`details/movie/${data.id}`}>
+                  <Link to={`movie/details/${data.id}`}>
                     <h1>{data.title}</h1>
                     <img
                       src={`${URL_IMAGE}${data.backdrop_path}`}
