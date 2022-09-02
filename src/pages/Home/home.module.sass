@@ -8,6 +8,12 @@
     display: flex
     justify-content: space-between
 
+    span
+      color: #BFBFBF
+
+    h1
+      color: #ffffff
+
     h1
       &::after
         content: ""
@@ -120,6 +126,12 @@
     display: flex
     justify-content: space-between
 
+    span
+      color: #BFBFBF
+
+    h1
+      color: #ffffff
+
     h1
       &::after
         content: ""
@@ -219,43 +231,54 @@
           border: 1px solid $headline
           cursor: pointer
 
-@media screen and ( max-width: 1115px  )
+@media screen and (max-width: 1115px)
 
-  .container__movies
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    grid-template-rows: 1fr 1fr 1fr
-    gap: 2rem
+  .container__popular
+    .container__movies
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      grid-template-rows: 1fr 1fr 1fr
+      gap: 2rem
 
-  .container__movies__rated
+      padding-block: 2rem
 
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    grid-template-rows: 1fr 1fr 1fr
-    gap: 2rem
+  .container__rated
+    .container__movies__rated
 
-@media screen and ( max-width: 1024px)
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      grid-template-rows: 1fr 1fr 1fr
+      gap: 2rem
 
-  .container__movies
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-template-rows: 1fr 1fr
-    gap: 2rem
+@media screen and (max-width: 1024px)
 
-  .container__movies__rated
+  .container__popular
+    .container__movies
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr 1fr
+      gap: 2rem
 
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-template-rows: 1fr 1fr
-    gap: 2rem
+      padding-block: 2rem
+
+  .container__rated
+    .container__movies__rated
+
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr 1fr
+      gap: 2rem
 
 @media screen and ( max-width: 425px)
 
-  .container__movies
-    display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: 1fr
-    gap: 2rem
+  .container__popular
+    .container__movies
+      display: grid
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr
+      gap: 2rem
+
+      padding-block: 2rem
 
   .container__movies__content__rated
 
@@ -264,9 +287,10 @@
     grid-template-rows: 1fr
     gap: 2rem
 
-  .container__movies__content
+  .container__rated
+    .container__movies__rated
 
-    display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: 1fr
-    gap: 2rem
+      display: grid
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr
+      gap: 2rem

@@ -8,14 +8,14 @@ export const Navbar = () => {
   return (
     <nav>
       <ul>
-        <Link to="/" data-tip="Página inicial" data-text-color="#0fc">
-          <ReactTooltip borderColor="#0fc" border />
+        <Link to="/" data-tip="Página inicial" data-text-color="#fff">
+          <ReactTooltip borderColor="#fff" border />
           <Article size={32} />
         </Link>
         <Link
           to="/category/movies"
           data-tip="Categoria de filmes"
-          data-text-color="#0fc"
+          data-text-color="#fff"
         >
           <ReactTooltip />
 
@@ -25,7 +25,7 @@ export const Navbar = () => {
         <Link
           to="/category/series"
           data-tip="Categoria de séries"
-          data-text-color="#0fc"
+          data-text-color="#fff"
         >
           <ReactTooltip />
 
