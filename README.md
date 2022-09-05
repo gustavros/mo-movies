@@ -20,6 +20,8 @@ O projeto ainda está em desenvolvimento e penso em atualizar com as seguintes m
 - [X] Scroll infinito
 - [X] Exibição de filme por página
 - [X] Exibição de séries por página
+- [ ] Botão nas páginas para subir para o topo
+- [ ] 
 - [ ] ..?
 
 ## 💻 Techs e libs usadas

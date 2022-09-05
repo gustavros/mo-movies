@@ -47,7 +47,7 @@
 
   .container__movies
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
 
     gap: 2rem
 
@@ -169,7 +169,7 @@
   .container__movies__rated
 
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
 
     gap: 2rem
 
@@ -240,3 +240,19 @@
         &:hover
           border: 1px solid $headline
           cursor: pointer
+
+@media screen and ( max-width: 530px  )
+
+  .container__movies__content
+
+    font-size: 2rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  .container__movies__content__rated
+
+    font-size: 2rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between

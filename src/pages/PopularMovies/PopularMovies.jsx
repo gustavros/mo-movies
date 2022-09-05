@@ -11,7 +11,7 @@ import ReactTooltip from "react-tooltip";
 export const PopularMovies = () => {
   const URL_IMAGE = "https://image.tmdb.org/t/p/w500";
   const [popularMovies, setPopularMovies] = useState([]);
-  let offset = 1;
+  let offset = 2;
 
   useTitle("Filmes mais populares | Mo' Movies");
 
@@ -56,8 +56,8 @@ export const PopularMovies = () => {
       <div className={styles.container__popular}>
         <div className={styles.container__movies__content}>
           <div>
-            <h1>MAIS POPULARES</h1>
-            <span>Os filmes mais populares.</span>
+            <h1>TODOS OS FILMES POPULARES</h1>
+            <span>Lista com todos os filmes mais populares.</span>
           </div>
         </div>
         <div className={styles.container__movies}>

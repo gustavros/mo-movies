@@ -14,7 +14,7 @@ import ReactTooltip from "react-tooltip";
 export const TopRatedMovies = () => {
   const URL_IMAGE = "https://image.tmdb.org/t/p/w500";
   const [topRated, setTopRated] = useState([]);
-  let offset = 1;
+  let offset = 2;
 
   useTitle("Filmes avaliados | Mo' Movies");
 
@@ -56,8 +56,8 @@ export const TopRatedMovies = () => {
       <div className={styles.container__rated}>
         <div className={styles.container__movies__content__rated}>
           <div>
-            <h1>MAIS AVALIADOS</h1>
-            <span>Os filmes mais votados.</span>
+            <h1>TODOS OS FILMES MAIS AVALIADOS</h1>
+            <span>Lista com todos os melhores filmes.</span>
           </div>
         </div>
         <div className={styles.container__movies__rated}>
