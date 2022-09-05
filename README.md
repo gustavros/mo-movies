@@ -14,14 +14,13 @@
 
 O projeto ainda está em desenvolvimento e penso em atualizar com as seguintes melhorias:
 
-- [X] Ajustar o código para o funcionamento do site em dispositivos móveis
-- [X] Ajustar o código para o funcionamento do site em dispositivos desktops
-- [X] Paginação para cada filme detalhadamente
-- [X] Scroll infinito
-- [X] Exibição de filme por página
-- [X] Exibição de séries por página
+- [x] Ajustar o código para o funcionamento do site em dispositivos móveis
+- [x] Ajustar o código para o funcionamento do site em dispositivos desktops
+- [x] Paginação para cada filme detalhadamente
+- [x] Scroll infinito
+- [x] Exibição de filme por página
+- [x] Exibição de séries por página
 - [ ] Botão nas páginas para subir para o topo
-- [ ] 
 - [ ] ..?
 
 ## 💻 Techs e libs usadas
