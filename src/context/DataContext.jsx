@@ -15,6 +15,8 @@ export const DataContextProvider = ({ children }) => {
       )
       .then((response) => {
         setPopularMovies(response.data.results);
+
+        console.log(response.data.page);
       })
       .catch((error) => {
         console.error(error);

@@ -48,8 +48,8 @@
 
   .container__movies
     display: grid
-    grid-template-columns: 1fr 1fr 1fr 1fr
-    grid-template-rows: 1fr 1fr 1fr 1fr
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+
     gap: 2rem
 
     padding-block: 2rem
@@ -165,8 +165,8 @@
   .container__movies__rated
 
     display: grid
-    grid-template-columns: 1fr 1fr 1fr 1fr
-    grid-template-rows: 1fr 1fr 1fr 1fr
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+
     gap: 2rem
 
     padding-block: 2rem
@@ -231,66 +231,66 @@
           border: 1px solid $headline
           cursor: pointer
 
-@media screen and (max-width: 1115px)
+// @media screen and (max-width: 1115px)
 
-  .container__popular
-    .container__movies
-      display: grid
-      grid-template-columns: 1fr 1fr 1fr
-      grid-template-rows: 1fr 1fr 1fr
-      gap: 2rem
+//   .container__popular
+//     .container__movies
+//       display: grid
+//       grid-template-columns: 1fr 1fr 1fr
+//       grid-template-rows: 1fr 1fr 1fr
+//       gap: 2rem
 
-      padding-block: 2rem
+//       padding-block: 2rem
 
-  .container__rated
-    .container__movies__rated
+//   .container__rated
+//     .container__movies__rated
 
-      display: grid
-      grid-template-columns: 1fr 1fr 1fr
-      grid-template-rows: 1fr 1fr 1fr
-      gap: 2rem
+//       display: grid
+//       grid-template-columns: 1fr 1fr 1fr
+//       grid-template-rows: 1fr 1fr 1fr
+//       gap: 2rem
 
-@media screen and (max-width: 1024px)
+// @media screen and (max-width: 1024px)
 
-  .container__popular
-    .container__movies
-      display: grid
-      grid-template-columns: 1fr 1fr
-      grid-template-rows: 1fr 1fr
-      gap: 2rem
+//   .container__popular
+//     .container__movies
+//       display: grid
+//       grid-template-columns: 1fr 1fr
+//       grid-template-rows: 1fr 1fr
+//       gap: 2rem
 
-      padding-block: 2rem
+//       padding-block: 2rem
 
-  .container__rated
-    .container__movies__rated
+//   .container__rated
+//     .container__movies__rated
 
-      display: grid
-      grid-template-columns: 1fr 1fr
-      grid-template-rows: 1fr 1fr
-      gap: 2rem
+//       display: grid
+//       grid-template-columns: 1fr 1fr
+//       grid-template-rows: 1fr 1fr
+//       gap: 2rem
 
-@media screen and ( max-width: 570px)
+// @media screen and ( max-width: 570px)
 
-  .container__popular
-    .container__movies
-      display: grid
-      grid-template-columns: 1fr 
-      grid-template-rows: 1fr
-      gap: 2rem
+//   .container__popular
+//     .container__movies
+//       display: grid
+//       grid-template-columns: 1fr
+//       grid-template-rows: 1fr
+//       gap: 2rem
 
-      padding-block: 2rem
+//       padding-block: 2rem
 
-  .container__movies__content__rated
+//   .container__movies__content__rated
 
-    display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: 1fr
-    gap: 2rem
+//     display: grid
+//     grid-template-columns: 1fr
+//     grid-template-rows: 1fr
+//     gap: 2rem
 
-  .container__rated
-    .container__movies__rated
+//   .container__rated
+//     .container__movies__rated
 
-      display: grid
-      grid-template-columns: 1fr
-      grid-template-rows: 1fr
-      gap: 2rem
+//       display: grid
+//       grid-template-columns: 1fr
+//       grid-template-rows: 1fr
+//       gap: 2rem
