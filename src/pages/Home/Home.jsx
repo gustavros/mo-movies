@@ -2,10 +2,11 @@ import { useContext } from "react";
 import { useTitle } from "react-use";
 import { Header } from "../../components/Header/Header";
 import { DataContext } from "../../context/DataContext";
-import { Star } from "phosphor-react";
+import { Info, Star } from "phosphor-react";
 import { Link } from "react-router-dom";
 
 import styles from "./home.module.sass";
+import ReactTooltip from "react-tooltip";
 
 export const Home = () => {
   useTitle("Página inicial | Mo' Movies");
@@ -22,15 +23,28 @@ export const Home = () => {
             <h1>MAIS POPULARES</h1>
             <span>Os filmes mais populares.</span>
           </div>
-          <Link to={"/movies/popular"}>Ver mais</Link>
+          <Link to={"/popular"}>Ver mais</Link>
         </div>
         <div className={styles.container__movies}>
           {popularMovies &&
             popularMovies.map((data) => {
               return (
                 <div key={data.id} className={styles.container__movie}>
-                  <Link to={`movie/details/${data.id}`}>
-                    <h1>{data.title}</h1>
+                  <Link to={`/details/${data.id}`}>
+                    <div>
+                      <h1>{data.title}</h1>
+                      {data.adult ? (
+                        <span
+                          data-tip={`${data.adult ? "" : "+18"}`}
+                          data-text-color="#f00"
+                        >
+                          <ReactTooltip borderColor="#bfbfbf" border />
+                          <Info size={18} color="#fff" />
+                        </span>
+                      ) : (
+                        ""
+                      )}
+                    </div>
                     <img
                       src={`${URL_IMAGE}${data.backdrop_path}`}
                       alt={data.title}
@@ -67,15 +81,28 @@ export const Home = () => {
             <h1>MAIS AVALIADOS</h1>
             <span>Os filmes mais votados.</span>
           </div>
-          <Link to={"/movies/popular"}>Ver mais</Link>
+          <Link to={"/top-rated"}>Ver mais</Link>
         </div>
         <div className={styles.container__movies__rated}>
           {topRated &&
             topRated.map((data) => {
               return (
                 <div key={data.id} className={styles.container__movie}>
-                  <Link to={`movie/details/${data.id}`}>
-                    <h1>{data.title}</h1>
+                  <Link to={`/details/${data.id}`}>
+                    <div>
+                      <h1>{data.title}</h1>
+                      {data.adult ? (
+                        <span
+                          data-tip={`${data.adult ? "" : "+18"}`}
+                          data-text-color="#f00"
+                        >
+                          <ReactTooltip borderColor="#bfbfbf" border />
+                          <Info size={18} color="#fff" />
+                        </span>
+                      ) : (
+                        ""
+                      )}
+                    </div>
                     <img
                       src={`${URL_IMAGE}${data.backdrop_path}`}
                       alt={data.title}

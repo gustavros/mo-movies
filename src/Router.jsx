@@ -12,13 +12,10 @@ export function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/category/movies" element={<MoviesCategory />} />
-      <Route path="/category/series" element={<SeriesCategory />} />
+      <Route path="/details/:id" element={<MovieDetail />} />
 
-      <Route path="movie/details/:id" element={<MovieDetail />} />
-      
-      <Route path="/movies/top-rated" element={<TopRatedMovies />} />
-      <Route path="/movies/popular" element={<PopularMovies />} />
+      <Route path="/top-rated" element={<TopRatedMovies />} />
+      <Route path="/popular" element={<PopularMovies />} />
     </Routes>
   );
 }
