@@ -17,9 +17,10 @@ O projeto ainda está em desenvolvimento e penso em atualizar com as seguintes m
 - [X] Ajustar o código para o funcionamento do site em dispositivos móveis
 - [X] Ajustar o código para o funcionamento do site em dispositivos desktops
 - [X] Paginação para cada filme detalhadamente
-- [ ] Exibição de filme por página
-- [ ] Exibição de séries por página
-- [ ] ...
+- [X] Scroll infinito
+- [X] Exibição de filme por página
+- [X] Exibição de séries por página
+- [ ] ..?
 
 ## 💻 Techs e libs usadas
 
