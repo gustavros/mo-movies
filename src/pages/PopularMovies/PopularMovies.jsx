@@ -1,6 +1,8 @@
 import React from "react";
 import { Header } from "../../components/Header/Header";
 
+import styles from "./popularmovies.module.sass"
+
 export const PopularMovies = () => {
   return (
     <>
