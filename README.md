@@ -4,11 +4,11 @@
 
 # Versão desktop 🖥
 
-![Desktop](https://user-images.githubusercontent.com/92998471/187029927-78978e2a-0d4d-447f-aa93-d88bd1f8d667.png)
+![Desktop](https://user-images.githubusercontent.com/92998471/188481113-7fc2921f-5b21-44b3-8c18-52e9e777af3c.png)
 
 # Versão mobile 📱
 
-![Mobile](https://user-images.githubusercontent.com/92998471/187029929-a4f8b98f-ba68-48b3-a7ed-e63e988907f3.png)
+![Mobile](https://user-images.githubusercontent.com/92998471/188481118-4f88114a-04f6-4d1f-baa4-47197447a4c8.png)
 
 ### ⚙ Ajustes e melhorias
 
