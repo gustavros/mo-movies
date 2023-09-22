@@ -35,7 +35,7 @@ export const Home = () => {
                       <h1>{data.title}</h1>
                       {data.adult ? (
                         <span
-                          data-tip={`${data.adult ? "" : "+18"}`}
+                          data-tip={`${data.adult ? "" : "Esse filme é +18"}`}
                           data-text-color="#f00"
                         >
                           <ReactTooltip borderColor="#bfbfbf" border />

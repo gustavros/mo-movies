@@ -13,6 +13,7 @@ export const MovieDetail = () => {
   const [genre, setGenre] = useState([]);
   const [date, setDate] = useState("");
   const [trailer, setTrailer] = useState([]);
+
   const URL_IMAGE = "https://image.tmdb.org/t/p/w500";
 
   useEffect(() => {
@@ -46,6 +47,8 @@ export const MovieDetail = () => {
         console.error(error);
       });
   }, []);
+
+  
 
   return (
     <>

@@ -3,6 +3,7 @@ import axios from "axios";
 
 export const DataContext = createContext();
 export const DataContextProvider = ({ children }) => {
+  
   const [popularMovies, setPopularMovies] = useState([]);
   const [topRated, setTopRated] = useState([]);
 
